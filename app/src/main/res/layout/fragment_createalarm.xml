@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/create_alarm_activity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.alarm.createalarm.CreateAlarm">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="32dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="0.4"
+                android:fontFamily="@font/amarante"
+                android:text="Alarm time"
+                android:textSize="24dp"
+                android:textAlignment="center"
+                android:textColor="?attr/textcolor" />
+
+            <TimePicker
+                android:id="@+id/create_alarm_timePicker"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.6"
+                android:timePickerMode="spinner" />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/create_alarm_title"
+            android:layout_width="match_parent"
+            android:fontFamily="@font/amarante"
+            android:textSize="18dp"
+            android:layout_height="wrap_content"
+            android:hint="Alarm title" />
+
+        <CheckBox
+            android:id="@+id/create_alarm_recurring"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:buttonTint="@color/colorPrimary"
+            android:checked="false"
+            android:fontFamily="@font/amarante"
+            android:textSize="18dp"
+            android:text="Repeat the alarm" />
+
+        <LinearLayout
+            android:id="@+id/create_alarm_weekDaysOptions"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="64dp"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <CheckBox
+                android:id="@+id/create_alarm_checkMon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/amarante"
+                android:textSize="18dp"
+                android:buttonTint="@color/colorPrimary"
+                android:text="Monday" />
+
+            <CheckBox
+                android:id="@+id/create_alarm_checkTue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/amarante"
+                android:textSize="18dp"
+                android:buttonTint="@color/colorPrimary"
+                android:text="Tuesday" />
+
+            <CheckBox
+                android:id="@+id/create_alarm_checkWed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/amarante"
+                android:textSize="18dp"
+                android:buttonTint="@color/colorPrimary"
+                android:text="Wednesday" />
+
+            <CheckBox
+                android:id="@+id/create_alarm_checkThu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/amarante"
+                android:textSize="18dp"
+                android:buttonTint="@color/colorPrimary"
+                android:text="Thursday" />
+
+            <CheckBox
+                android:id="@+id/create_alarm_checkFri"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/amarante"
+                android:textSize="18dp"
+                android:buttonTint="@color/colorPrimary"
+                android:text="Friday" />
+
+            <CheckBox
+                android:id="@+id/create_alarm_checkSat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/amarante"
+                android:textSize="18dp"
+                android:buttonTint="@color/colorPrimary"
+                android:text="Saturday" />
+
+            <CheckBox
+                android:id="@+id/create_alarm_checkSun"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/amarante"
+                android:textSize="18dp"
+                android:buttonTint="@color/colorPrimary"
+                android:text="Sunday" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/create_alarm_addAlarm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="80dp"
+        android:background="@drawable/orange_background_for_labels"
+        android:text="Add the alarm"
+        android:fontFamily="@font/amarante"
+        android:textSize="18dp"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_alarm"
+        android:icon="@drawable/ic_alarm_black_24dp"
+        android:title="@string/title_alarm"
+        android:fontFamily="@font/amarante"/>
+
+    <item
+        android:id="@+id/navigation_goals"
+        android:icon="@drawable/ic_baseline_check_circle_24"
+        android:title="@string/title_goals"
+        android:fontFamily="@font/amarante"/>
+
+    <item
+        android:id="@+id/navigation_settings"
+        android:icon="@drawable/ic_baseline_settings_24"
+        android:title="@string/title_activity_settings"
+        android:fontFamily="@font/amarante"/>
+
+</menu>

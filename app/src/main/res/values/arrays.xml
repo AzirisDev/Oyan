@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <array name="pref_alarm_melody_labels">
+
+        <item>Oyan</item>
+        <item>Wake Up</item>
+        <item>Trumpet</item>
+        <item>Gamelan</item>
+
+    </array>
+
+    <array name="pref_alarm_melody_values">
+
+        <item>oyan</item>
+        <item>wake_up</item>
+        <item>trumpet</item>
+        <item>gamelan</item>
+
+    </array>
+</resources>

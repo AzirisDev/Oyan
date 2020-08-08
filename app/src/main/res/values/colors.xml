@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#FF7F27</color>
+    <color name="colorPrimaryDark">#FFC90E</color>
+    <color name="colorAccent">#FFFFFF</color>
+    <color name="black">#000000</color>
+
+    <!--Switch colors-->
+    <color name="disable_foreground_grey">#555555</color>
+    <color name="disable_thumb_grey">#8C8B8A</color>
+    <color name="enable_thumb_orange">#FF7F27</color>
+</resources>

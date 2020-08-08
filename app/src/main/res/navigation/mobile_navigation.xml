@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_goals">
+
+    <fragment
+        android:id="@+id/navigation_alarm"
+        android:name="com.example.oyan.ui.alarm.alarmlist.AlarmFragment"
+        android:label="@string/title_alarm"
+        android:fontFamily="@font/amarante"
+        tools:layout="@layout/fragment_alarm" >
+        <action
+            android:id="@+id/action_alarmsListFragment_to_createAlarmFragment"
+            app:destination="@id/navigation_create_alarm" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_goals"
+        android:name="com.example.oyan.ui.goals.GoalsFragment"
+        android:label="@string/title_goals"
+        android:fontFamily="@font/amarante"
+        tools:layout="@layout/fragment_goals" />
+
+    <fragment
+        android:id="@+id/navigation_settings"
+        android:name="com.example.oyan.ui.settings.SettingsFragment"
+        android:label="@string/title_activity_settings"
+        android:fontFamily="@font/amarante"
+        tools:layout="@layout/fragment_settings" />
+
+    <fragment
+        android:id="@+id/navigation_create_alarm"
+        android:name="com.example.oyan.ui.alarm.createalarm.CreateAlarm"
+        android:label="Create Alarm"
+        android:fontFamily="@font/amarante">
+        <action
+            android:id="@+id/action_createAlarmFragment_to_alarmsListFragment"
+            app:destination="@id/navigation_alarm" />
+    </fragment>
+</navigation>

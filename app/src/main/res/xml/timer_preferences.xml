@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <CheckBoxPreference
+        android:defaultValue="true"
+        android:key="enable_sound"
+        android:title="Enable sound"
+        android:summaryOff="Sound disabled"
+        android:summaryOn="Sound enabled"
+        />
+
+    <ListPreference
+        android:title="Alarm melody"
+        android:key="alarm_melody"
+        android:defaultValue="oyan"
+        android:entries="@array/pref_alarm_melody_labels"
+        android:entryValues="@array/pref_alarm_melody_values"/>
+
+
+</PreferenceScreen>
